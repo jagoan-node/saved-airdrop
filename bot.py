@@ -114,6 +114,7 @@ async def receive_wallet(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["wallet_address"] = update.message.text.strip()
     keyboard = [
         [InlineKeyboardButton("EVM", callback_data="wallet_type_evm")],
+        [InlineKeyboardButton("COSMOS", callback_data="wallet_type_cosmos")],
         [InlineKeyboardButton("Other", callback_data="wallet_type_other")],
     ]
     await update.message.reply_text("Pilih tipe wallet:", reply_markup=InlineKeyboardMarkup(keyboard))
@@ -153,7 +154,7 @@ async def receive_airdrop_title(update: Update, context: ContextTypes.DEFAULT_TY
     context.user_data["airdrop_title"] = title.upper()
     keyboard = [
         [InlineKeyboardButton("TESTNET", callback_data="airdrop_type_testnet")],
-        [InlineKeyboardButton("AIRDROP", callback_data="airdrop_type_airdrop")],
+        [InlineKeyboardButton("APK", callback_data="airdrop_type_aplikasi")],
         [InlineKeyboardButton("NODE", callback_data="airdrop_type_node")],
         [InlineKeyboardButton("OTHER", callback_data="airdrop_type_other")],
     ]

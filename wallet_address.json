@@ -1,1 +1,16 @@
-
+{
+    "1772558892": [
+        {
+            "address": "0x5d18b6e6d9612341e043961d57d1c74b66ded583",
+            "chain": "EVM"
+        },
+        {
+            "address": "0x5d18b6e6d9612341e043961d57d1c74b66ded583",
+            "chain": "KONTOL"
+        },
+        {
+            "address": "0x5d18b6e6d9612341e043961d57d1c74b66ded583",
+            "chain": "EVM"
+        }
+    ]
+}
